@@ -1,0 +1,14 @@
+# Quilt.
+/.pc/
+
+# Patches.
+/license.txt
+
+# Debian package generated files.
+/debian/files
+/debian/*.debhelper.log
+/debian/*.substvars
+/debian/pvr-omap*/
+/debian/lib*/
+/debian/stamp-*
+/debian/tmp/

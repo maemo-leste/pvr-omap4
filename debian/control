@@ -1,0 +1,232 @@
+Source: pvr-omap4
+Section: libs
+Priority: extra
+Maintainer: TI OMAP Developers <tiomap-dev@lists.launchpad.net>
+Build-Depends:
+ cdbs,
+ debhelper (>= 7),
+ quilt,
+ libx11-6,
+ libdrm2 (>= 2.4.3),
+ libxfixes3 (>= 1:4.0.1),
+ libxext6,
+ libdrm-omap1,
+ libdri2-1,
+ libpixman-1-0,
+ libgbm-dev,
+ libwayland-dev
+Standards-Version: 3.9.1
+
+Package: pvr-omap4
+Section: graphics
+Architecture: armhf
+Depends: ${shlibs:Depends}, ${misc:Depends}, pvr-omap4-data (= ${binary:Version}), pvr-omap4-dkms (>= 1.7.15.0.1.54), libdrm-omap1, libdri2-1, libpixman-1-0
+Conflicts: xf86-video-v4l2, sgx-lib
+Replaces: xf86-video-v4l2, sgx-lib
+Description: PowerVR SGX540 libraries for OMAP4, remaining libs and binaries
+ PowerVR SGX540 Linux libraries for OMAP4.
+ .
+ This package contains the remaining binaries and common libraries.
+
+Package: pvr-omap4-dbg
+Section: debug
+Architecture: armhf
+Depends: pvr-omap4 (= ${binary:Version})
+Conflicts: xf86-video-v4l2
+Replaces: xf86-video-v4l2
+Description: PowerVR SGX540 libraries for OMAP4, debugging symbols
+ PowerVR SGX540 Linux libraries for OMAP4.
+ .
+ This package contains the remaining binaries and common libraries debugging
+ symbols.
+
+Package: pvr-omap4-utils
+Section: graphics
+Architecture: armhf
+Depends: ${shlibs:Depends}, ${misc:Depends}, pvr-omap4 (= ${binary:Version})
+Conflicts: sgx-lib
+Replaces: sgx-lib
+Description: PowerVR SGX540 utils for OMAP4
+ PowerVR SGX540 Linux utilities for OMAP4.
+ .
+ This package contains utilities to help testing the PowerVR SGX540 libraries.
+
+Package: pvr-omap4-utils-dbg
+Section: debug
+Architecture: armhf
+Depends: pvr-omap4-utils (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}, pvr-omap4 (= ${binary:Version})
+Description: PowerVR SGX540 utils for OMAP4, debugging symbols
+ PowerVR SGX540 Linux utilities for OMAP4.
+ .
+ This package contains utilities to help testing the PowerVR SGX540 libraries
+ debugging symbols.
+
+Package: libegl1-sgx-omap4
+Section: libs
+Architecture: armhf
+Depends: ${shlibs:Depends}, ${misc:Depends}, pvr-omap4 (= ${binary:Version})
+Provides: libegl1-x11
+Conflicts: libegl1-x11, sgx-lib
+Replaces: libegl1-x11, sgx-lib
+Description: PowerVR SGX540 EGL libraries for OMAP4
+ This package contains the EGL native platform graphics interface library.
+ EGL provides a platform-agnostic mechanism for creating rendering surfaces
+ for use with other graphics libraries, such as OpenGL|ES.
+
+Package: libegl1-sgx-omap4-dbg
+Section: debug
+Architecture: armhf
+Depends: libegl1-sgx-omap4 (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}, pvr-omap4 (= ${binary:Version})
+Description: PowerVR SGX540 EGL libraries for OMAP4, debugging symbols
+ This package contains the EGL native platform graphics interface library.
+ EGL provides a platform-agnostic mechanism for creating rendering surfaces
+ for use with other graphics libraries, such as OpenGL|ES.
+ .
+ This package contains the debugging symbols for the EGL library.
+
+Package: libegl1-sgx-omap4-dev
+Section: libdevel
+Architecture: armhf
+Depends: libegl1-sgx-omap4 (= ${binary:Version}), libx11-dev, ${misc:Depends}
+Provides: libegl1-mesa-dev, libegl1-x11-dev
+Conflicts: libegl1-mesa-dev, libegl1-x11-dev, sgx-lib-dev
+Replaces: libegl1-mesa-dev, libegl1-x11-dev, sgx-lib-dev
+Description: PowerVR SGX540 EGL libraries for OMAP4, development files
+ This package contains the development files for the EGL native platform
+ graphics interface library.
+ EGL provides a platform-agnostic mechanism for creating rendering surfaces
+ for use with other graphics libraries, such as OpenGL|ES.
+ .
+ This package contains the development files for the EGL library.
+
+Package: libgles1-sgx-omap4
+Section: libs
+Architecture: armhf
+Depends: ${shlibs:Depends}, ${misc:Depends}, pvr-omap4 (= ${binary:Version})
+Provides: libgles1
+Conflicts: libgles1, sgx-lib
+Replaces: libgles1, sgx-lib
+Description: PowerVR SGX540 OpenGL|ES 1.x libraries for OMAP4
+ OpenGL|ES is a cross-platform API for full-function 2D and 3D graphics on
+ embedded systems - including consoles, phones, appliances and vehicles.
+ It contains a subset of OpenGL plus a number of extensions for the
+ special needs of embedded systems.
+ .
+ OpenGL|ES 1.x provides an API for fixed-function hardware.
+
+Package: libgles1-sgx-omap4-dbg
+Section: debug
+Architecture: armhf
+Depends: libgles1-sgx-omap4 (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}, pvr-omap4 (= ${binary:Version})
+Description: PowerVR SGX540 OpenGL|ES 1.x libraries for OMAP4, debugging symbols
+ OpenGL|ES is a cross-platform API for full-function 2D and 3D graphics on
+ embedded systems - including consoles, phones, appliances and vehicles.
+ It contains a subset of OpenGL plus a number of extensions for the
+ special needs of embedded systems.
+ .
+ OpenGL|ES 1.x provides an API for fixed-function hardware.
+ .
+ This package contains the debugging symbols for the GLES1 library.
+
+Package: libgles1-sgx-omap4-dev
+Section: libdevel
+Architecture: armhf
+Depends: libgles1-sgx-omap4 (= ${binary:Version}), ${misc:Depends}
+Provides: libgles1-mesa-dev, libgles1-dev
+Conflicts: libgles1-mesa-dev, libgles1-dev, sgx-lib-dev
+Replaces: libgles1-mesa-dev, libgles1-dev, sgx-lib-dev
+Description: PowerVR SGX540 OpenGL|ES 1.x libraries for OMAP4, development files
+ OpenGL|ES is a cross-platform API for full-function 2D and 3D graphics on
+ embedded systems - including consoles, phones, appliances and vehicles.
+ It contains a subset of OpenGL plus a number of extensions for the
+ special needs of embedded systems.
+ .
+ OpenGL|ES 1.x provides an API for fixed-function hardware.
+ .
+ This package contains the development files for the GLES1 library.
+
+Package: libgles2-sgx-omap4
+Section: libs
+Architecture: armhf
+Depends: ${shlibs:Depends}, ${misc:Depends}, pvr-omap4 (= ${binary:Version})
+Provides: libgles2
+Conflicts: libgles2, sgx-lib
+Replaces: libgles2, sgx-lib
+Description: PowerVR SGX540 OpenGL|ES 2.x libraries for OMAP4
+ OpenGL|ES is a cross-platform API for full-function 2D and 3D graphics on
+ embedded systems - including consoles, phones, appliances and vehicles.
+ It contains a subset of OpenGL plus a number of extensions for the
+ special needs of embedded systems.
+ .
+ OpenGL|ES 2.x provides an API for programmable hardware including vertex
+ and fragment shaders.
+
+Package: libgles2-sgx-omap4-dbg
+Section: debug
+Architecture: armhf
+Depends: libgles2-sgx-omap4 (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}, pvr-omap4 (= ${binary:Version})
+Description: PowerVR SGX540 OpenGL|ES 2.x libraries for OMAP4, debugging symbols
+ OpenGL|ES is a cross-platform API for full-function 2D and 3D graphics on
+ embedded systems - including consoles, phones, appliances and vehicles.
+ It contains a subset of OpenGL plus a number of extensions for the
+ special needs of embedded systems.
+ .
+ OpenGL|ES 2.x provides an API for programmable hardware including vertex
+ and fragment shaders.
+ .
+ This package contains the debugging symbols for the GLES2 library.
+
+Package: libgles2-sgx-omap4-dev
+Section: libdevel
+Architecture: armhf
+Depends: libgles2-sgx-omap4 (= ${binary:Version}), ${misc:Depends}
+Provides: libgles2-mesa-dev, libgles2-dev
+Conflicts: libgles2-mesa-dev, libgles2-dev, sgx-lib-dev
+Replaces: libgles2-mesa-dev, libgles2-dev, sgx-lib-dev
+Description: PowerVR SGX540 OpenGL|ES 2.x libraries for OMAP4, development files
+ OpenGL|ES is a cross-platform API for full-function 2D and 3D graphics on
+ embedded systems - including consoles, phones, appliances and vehicles.
+ It contains a subset of OpenGL plus a number of extensions for the
+ special needs of embedded systems.
+ .
+ OpenGL|ES 2.x provides an API for programmable hardware including vertex
+ and fragment shaders.
+ .
+ This package contains the development files for the GLES2 library.
+
+Package: pvr-omap4-data
+Priority: optional
+Architecture: armhf
+Depends: ${misc:Depends}
+Suggests: pvr-omap4
+Conflicts: sgx-lib-data
+Replaces: sgx-lib-data
+Description: PowerVR SGX540 libraries for OMAP4, data files
+ PowerVR SGX540 Linux libraries for OMAP4.
+ .
+ This comprises libraries for OpenGL ES 1.1, 2.0
+ and test applications.
+ .
+ This package contains the data files.
+
+Package: pvr-omap4-xf86
+Section: graphics
+Architecture: armhf
+Depends: ${shlibs:Depends}, ${misc:Depends}, pvr-omap4-data (= ${binary:Version}), pvr-omap4-dkms (>= 1.7.15.0.1.54), libdrm-omap1, libdri2-1, libpixman-1-0
+Conflicts: xserver-xorg-video-omap-pvr
+Replaces: xserver-xorg-video-omap-pvr
+Description: X.org graphics -- TI OMAP pvr display driver
+ This driver for the X.org server provides support for OMAP3 and
+ newer devices. Currently it relies on a closed-source submodule
+ for EXA acceleration.
+
+Package: pvr-omap4-xf86-dbg
+Section: debug
+Architecture: armhf
+Depends: pvr-omap4 (= ${binary:Version})
+Conflicts: xserver-xorg-video-omap-pvr-dbg, xserver-xorg-video-omap-pvr-dbgsym
+Replaces: xserver-xorg-video-omap-pvr-dbg, xserver-xorg-video-omap-pvr-dbgsym
+Description: X.org graphics -- TI OMAP pvr display driver (debug symbols)
+ This driver for the X.org server provides support for OMAP3 and
+ newer devices. Currently it relies on a closed-source submodule
+ for EXA acceleration.

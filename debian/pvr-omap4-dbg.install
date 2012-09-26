@@ -1,0 +1,12 @@
+usr/lib/debug/usr/lib/libsrv_um.so*
+usr/lib/debug/usr/lib/libglslcompiler.so*
+usr/lib/debug/usr/lib/libusc.so*
+usr/lib/debug/usr/lib/libsrv_init.so*
+usr/lib/debug/usr/lib/libIMGegl.so*
+usr/lib/debug/usr/lib/libPVRScopeServices.so*
+usr/lib/debug/usr/lib/libpvrws_OMAPDRI2.so*
+usr/lib/debug/usr/lib/libpvrws_KMS.so*
+usr/lib/debug/usr/lib/libpvrws_WAYLAND.so*
+usr/lib/debug/usr/lib/libpvr2d.so*
+usr/lib/debug/usr/lib/libpvr_wlegl.so*
+usr/lib/debug/usr/lib/gbm

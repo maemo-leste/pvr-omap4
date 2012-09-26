@@ -1,0 +1,14 @@
+usr/share/X11/xorg.conf.d
+usr/lib/libsrv_um.so*
+usr/lib/libglslcompiler.so*
+usr/lib/libusc.so*
+usr/lib/libsrv_init.so*
+usr/lib/libIMGegl.so*
+usr/lib/libPVRScopeServices.so*
+usr/lib/libpvrws_OMAPDRI2.so*
+usr/lib/libpvrws_KMS.so*
+usr/lib/libpvrws_WAYLAND.so*
+usr/lib/libpvr2d.so*
+usr/lib/libpvr_wlegl.so*
+usr/lib/libwayland-egl.so*
+usr/lib/gbm
