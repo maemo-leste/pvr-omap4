@@ -16,6 +16,8 @@ Build-Depends:
  libgbm-dev,
  libwayland-dev
 Standards-Version: 3.9.1
+Vcs-Git: git://gitorious.org/ubuntu-omap/pvr-omap4.git
+Vcs-Browser: https://gitorious.org/ubuntu-omap/pvr-omap4
 
 Package: pvr-omap4
 Section: graphics
