@@ -1,3 +1,9 @@
+pvr-omap4 (1.9.0.6.1.1-3) precise; urgency=low
+
+  * Update Vcs
+
+ -- Xavier Boudet <x-boudet@ti.com>  Wed, 26 Sep 2012 17:07:35 +0200
+
 pvr-omap4 (1.9.0.6.1.1-2) precise; urgency=low
 
   * Deliver wayland-egl.pc in dev packages
