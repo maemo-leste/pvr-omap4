@@ -4,7 +4,7 @@ b2bc6d66f648348f6427660a6c8ab8b4  usr/bin/pvrsrvinit
 aa9f4f13d079bf9483f099d9ed3e9da7  usr/bin/xgles1test1
 bf994b9cd7c3d16809c120c2d7959f71  usr/bin/xgles2test1
 c98ccec2f99e965d297aa77a450abb48  usr/bin/xmultiegltest
-67b7a9898cc249edf67e6dc9ca750e91  usr/lib/gbm/gbm_pvr.so.1.9.6.0
+dd629511d62b8e562e8e23ef5626d664  usr/lib/gbm/gbm_pvr.so.1.9.6.0
 4ac8f0f123bcf19dfbce141cd9a70c28  usr/lib/libEGL.so.1.9.6.0
 c0a375bce766cac9588f6a39e60dcac8  usr/lib/libGLESv1_CM.so.1.9.6.0
 9d998f856da075673d072509af2a82f4  usr/lib/libGLESv2.so.1.9.6.0
@@ -13,12 +13,12 @@ e7a7cb7ca472d006b2a9564195c960aa  usr/lib/libIMGegl.so.1.9.6.0
 fc035720c5abc15e5191005205a33938  usr/lib/libglslcompiler.so.1.9.6.0
 c372a68513854b02eec8241f7f085e87  usr/lib/libpvr2d.so.1.9.6.0
 ed647834eff54df93fe4962ec0375b05  usr/lib/libpvr_wlegl.so.1.9.6.0
-1d94a1dd810b4fc67442fab975ec651a  usr/lib/libpvrws_KMS.so.1.9.6.0
+76ed069e7dd87a417420708226a8996d  usr/lib/libpvrws_KMS.so.1.9.6.0
 d903177dcdf896080cf07d92ad8b52a9  usr/lib/libpvrws_OMAPDRI2.so.1.9.6.0
 f2d41ff788c80c8818ae5b99048280d4  usr/lib/libpvrws_WAYLAND.so.1.9.6.0
 9a211281da6b25eef0e05c07c49fac5d  usr/lib/libsrv_init.so.1.9.6.0
-47b51aa0eb09c6d58c827c5450a8504a  usr/lib/libsrv_um.so.1.9.6.0
+30972039e2d4ba579170318fcf5bd66a  usr/lib/libsrv_um.so.1.9.6.0
 7934590f7cade6adc2037e007cd16b37  usr/lib/libusc.so.1.9.6.0
 db1a9b82c1800e75e7401ee9d0497c70  usr/share/X11/xorg.conf.d/99-omap.conf
-f1e73a81c5cabe533458f330fbeac0ae  usr/share/doc/sgx-lib/changelog.Debian.gz
+e33615b201f6d916f4bed6ee4dacec39  usr/share/doc/sgx-lib/changelog.Debian.gz
 542af8025bb26f9b36a120c00e319748  usr/share/doc/sgx-lib/copyright
