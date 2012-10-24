@@ -12,13 +12,13 @@ b9156aaf29487acd7e922ed6957029a7  usr/lib/libGLESv1_CM.so.1.9.6.0
 92b78cb132a1dab605e93e31b76c4d80  usr/lib/libPVRScopeServices.so.1.9.6.0
 9a7f10857828f048e17903db17eb9f19  usr/lib/libglslcompiler.so.1.9.6.0
 c372a68513854b02eec8241f7f085e87  usr/lib/libpvr2d.so.1.9.6.0
-ed647834eff54df93fe4962ec0375b05  usr/lib/libpvr_wlegl.so.1.9.6.0
+601f9dd56788669a06d5863abe124fa4  usr/lib/libpvr_wlegl.so.1.9.6.0
 76ed069e7dd87a417420708226a8996d  usr/lib/libpvrws_KMS.so.1.9.6.0
 d903177dcdf896080cf07d92ad8b52a9  usr/lib/libpvrws_OMAPDRI2.so.1.9.6.0
-f2d41ff788c80c8818ae5b99048280d4  usr/lib/libpvrws_WAYLAND.so.1.9.6.0
+5a3f60128fcde97b79a34248be649bb2  usr/lib/libpvrws_WAYLAND.so.1.9.6.0
 c565b206f1ab767386b9a74de89d3093  usr/lib/libsrv_init.so.1.9.6.0
 854641f561daf557abd0777538a569c8  usr/lib/libsrv_um.so.1.9.6.0
 d7db981b540fa579bbc07813eb1e937f  usr/lib/libusc.so.1.9.6.0
 db1a9b82c1800e75e7401ee9d0497c70  usr/share/X11/xorg.conf.d/99-omap.conf
-8fee44a7edf705dd68da142670f92ebb  usr/share/doc/sgx-lib/changelog.Debian.gz
+97bd70cbdee80efc6aa969f519053b86  usr/share/doc/sgx-lib/changelog.Debian.gz
 542af8025bb26f9b36a120c00e319748  usr/share/doc/sgx-lib/copyright
