@@ -22,7 +22,15 @@ Vcs-Browser: https://gitorious.org/ubuntu-omap/pvr-omap4
 Package: pvr-omap4
 Section: graphics
 Architecture: armhf
-Depends: ${shlibs:Depends}, ${misc:Depends}, pvr-omap4-data (= ${binary:Version}), pvr-omap4-dkms (>= 1.7.15.0.1.54), libdrm-omap1, libdri2-1, libpixman-1-0
+Depends:
+ ${shlibs:Depends},
+ ${misc:Depends},
+ pvr-omap4-data (= ${binary:Version}),
+ pvr-omap4-dkms (>= 1.9.0.7.1.1-1),
+ libdrm-omap1,
+ libdri2-1,
+ libpixman-1-0,
+ libgbm1 (>= 9.0.0-8)
 Conflicts: xf86-video-v4l2, sgx-lib
 Replaces: xf86-video-v4l2, sgx-lib
 Description: PowerVR SGX540 libraries for OMAP4, remaining libs and binaries
