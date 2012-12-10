@@ -1,13 +1,13 @@
 Package: xserver-xorg-video-omap-pvr
 Source: xf86-video-omap-pvr
-Version: 0.3.5-0ubuntu2
+Version: 0.3.5-1ubuntu3
 Architecture: armhf
 Maintainer: TI OMAP Developers <tiomap-dev@lists.launchpad.net>
 Installed-Size: 100
 Depends: libc6 (>= 2.15-0ubuntu8), libdrm-omap1 (>= 2.4.33), libdrm2 (>= 2.3.1), libpixman-1-0 (>= 0.13.2), xorg-video-abi-11, xserver-xorg-core (>= 2:1.10.99.901), sgx-lib
 Conflicts: pvr-omap4-xf86
 Replaces: pvr-omap4-xf86
-Provides: xorg-driver-video
+Provides: pvr-omap4-xf86, xorg-driver-video
 Section: x11
 Priority: optional
 Description: X.org graphics -- TI OMAP pvr display driver

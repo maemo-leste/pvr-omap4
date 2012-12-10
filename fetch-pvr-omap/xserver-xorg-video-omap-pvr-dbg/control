@@ -1,10 +1,10 @@
 Package: xserver-xorg-video-omap-pvr-dbg
 Source: xf86-video-omap-pvr
-Version: 0.3.5-0ubuntu2
+Version: 0.3.5-1ubuntu3
 Architecture: armhf
 Maintainer: TI OMAP Developers <tiomap-dev@lists.launchpad.net>
 Installed-Size: 264
-Depends: xserver-xorg-video-omap-pvr (= 0.3.5-0ubuntu2)
+Depends: xserver-xorg-video-omap-pvr (= 0.3.5-1ubuntu3)
 Conflicts: pvr-omap4-xf86-dbg, xserver-xorg-video-omap-pvr-dbgsym
 Replaces: pvr-omap4-xf86-dbg, xserver-xorg-video-omap-pvr-dbgsym
 Section: debug

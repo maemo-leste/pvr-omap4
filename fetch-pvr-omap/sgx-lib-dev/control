@@ -1,13 +1,13 @@
 Package: sgx-lib-dev
 Source: sgx-lib
-Version: 1.9.0.7.1-1glp4
+Version: 1.9.0.7.1-2glp5
 Architecture: armhf
 Maintainer: TI OMAP Developers <tiomap-dev@lists.launchpad.net>
 Installed-Size: 265
-Depends: sgx-lib (= 1.9.0.7.1-1glp4), libx11-dev
-Conflicts: libegl1-mesa-dev, libegl1-sgx-omap4-dev, libegl1-x11-dev, libgles1-dev, libgles1-mesa-dev, libgles1-sgx-omap4-dev, libgles2-dev, libgles2-mesa-dev, libgles2-sgx-omap4-dev
-Replaces: libegl1-mesa-dev, libegl1-sgx-omap4-dev, libegl1-x11-dev, libgles1-dev, libgles1-mesa-dev, libgles1-sgx-omap4-dev, libgles2-dev, libgles2-mesa-dev, libgles2-sgx-omap4-dev
-Provides: libegl1-mesa-dev, libegl1-x11-dev, libgles1-dev, libgles1-mesa-dev, libgles2-dev, libgles2-mesa-dev
+Depends: sgx-lib (= 1.9.0.7.1-2glp5), libx11-dev
+Conflicts: libegl1-mesa-dev, libegl1-sgx-omap4-dev, libegl1-x11-dev, libgles1-dev, libgles1-mesa-dev, libgles1-sgx-omap4-dev, libgles2-dev, libgles2-mesa-dev, libgles2-sgx-omap4-dev, pvr-omap4-dev
+Replaces: libegl1-mesa-dev, libegl1-sgx-omap4-dev, libegl1-x11-dev, libgles1-dev, libgles1-mesa-dev, libgles1-sgx-omap4-dev, libgles2-dev, libgles2-mesa-dev, libgles2-sgx-omap4-dev, pvr-omap4-dev
+Provides: libegl1-mesa-dev, libegl1-sgx-omap4-dev, libegl1-x11-dev, libgles1-dev, libgles1-mesa-dev, libgles1-sgx-omap4-dev, libgles2-dev, libgles2-mesa-dev, libgles2-sgx-omap4-dev
 Section: graphics
 Priority: extra
 Homepage: https://gforge01.dal.design.ti.com/gf/project/gfx_l24_ddk2/
