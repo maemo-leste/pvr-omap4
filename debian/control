@@ -53,6 +53,8 @@ Depends:
  libdri2-1,
  libpixman-1-0,
  libgbm1 (>= 9.0.0-8)
+Replaces: pvr-omap4 (<< 1.9.0.7.1.5-1)
+Breaks: pvr-omap4 (<< 1.9.0.7.1.5-1)
 Description: PowerVR SGX540 libraries for OMAP4, remaining libs and binaries
  PowerVR SGX540 Linux libraries for OMAP4.
  .
