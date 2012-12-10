@@ -20,5 +20,5 @@ c565b206f1ab767386b9a74de89d3093  usr/lib/libsrv_init.so.1.9.6.0
 854641f561daf557abd0777538a569c8  usr/lib/libsrv_um.so.1.9.6.0
 d7db981b540fa579bbc07813eb1e937f  usr/lib/libusc.so.1.9.6.0
 db1a9b82c1800e75e7401ee9d0497c70  usr/share/X11/xorg.conf.d/99-omap.conf
-260f0bb7a9732885094587a0ba0ade19  usr/share/doc/sgx-lib/changelog.Debian.gz
+2d35a63258e638421fc50eb2b3e97121  usr/share/doc/sgx-lib/changelog.Debian.gz
 542af8025bb26f9b36a120c00e319748  usr/share/doc/sgx-lib/copyright
