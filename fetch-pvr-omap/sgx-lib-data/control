@@ -1,9 +1,9 @@
 Package: sgx-lib-data
 Source: sgx-lib
-Version: 1.9.0.7.1-2glp5
+Version: 1.9.0.8.1-2glp1
 Architecture: all
 Maintainer: TI OMAP Developers <tiomap-dev@lists.launchpad.net>
-Installed-Size: 41
+Installed-Size: 42
 Suggests: sgx-lib
 Conflicts: pvr-omap4-data
 Replaces: pvr-omap4-data
