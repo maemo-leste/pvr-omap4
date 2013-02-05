@@ -1,3 +1,11 @@
+pvr-omap4 (1.9.0.8.1.1-1) precise; urgency=low
+
+  * Baselines:
+    - NEW: sgx-lib 1.9.0.8.1-2glp1
+    - SAME: xserver-xorg-video-omap-pvr 0.3.5-1ubuntu3
+
+ -- Xavier Boudet <x-boudet@ti.com>  Tue, 05 Feb 2013 18:54:19 +0100
+
 pvr-omap4 (1.9.0.7.1.5-2) precise; urgency=low
 
   * Fix control for pvr-omap4-libs install
