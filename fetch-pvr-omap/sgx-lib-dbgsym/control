@@ -1,10 +1,10 @@
 Package: sgx-lib-dbgsym
 Source: sgx-lib
-Version: 1.9.0.7.1-2glp5
-Depends: sgx-lib (= 1.9.0.7.1-2glp5)
+Version: 1.9.0.8.1-2glp1
+Depends: sgx-lib (= 1.9.0.8.1-2glp1)
 Architecture: armhf
 Maintainer: TI OMAP Developers <tiomap-dev@lists.launchpad.net>
-Installed-Size: 9161
+Installed-Size: 9165
 Section: graphics
 Priority: extra
 Homepage: https://gforge01.dal.design.ti.com/gf/project/gfx_l24_ddk2/
