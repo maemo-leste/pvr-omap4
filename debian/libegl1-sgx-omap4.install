@@ -1,1 +1,1 @@
-usr/lib/libEGL.so*
+usr/lib/*/libEGL.so.*

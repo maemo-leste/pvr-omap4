@@ -1,9 +1,10 @@
 #!/usr/bin/make -f
+MESA_VERS := $(shell apt-cache show --no-all-versions libegl1-mesa | \
+               grep '^Version:' | sed 's/.*: //')
+SUBSTVARS := -Vlibegl1-mesa:Version="$(MESA_VERS)" -Vlibgles2-mesa:Version="$(MESA_VERS)"
 
-include /usr/share/cdbs/1/rules/debhelper.mk
-include /usr/share/cdbs/1/class/makefile.mk
-include /usr/share/cdbs/1/rules/patchsys-quilt.mk
+%:
+	dh $@
 
-DEB_MAKE_CLEAN_TARGET := clean
-DEB_MAKE_BUILD_TARGET := build
-DEB_MAKE_INSTALL_TARGET := install DESTDIR=$(CURDIR)/debian/tmp/
+override_dh_gencontrol:
+	dh_gencontrol -- $(SUBSTVARS)

@@ -1,4 +1,6 @@
 usr/include/EGL
 usr/include/KHR
-usr/lib/pkgconfig/egl.pc
-usr/lib/pkgconfig/wayland-egl.pc
+usr/lib/*/pkgconfig/egl.pc
+usr/lib/*/pkgconfig/wayland-egl.pc
+usr/lib/*/libEGL.so
+usr/lib/*/libwayland-egl.so

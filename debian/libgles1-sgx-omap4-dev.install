@@ -1,2 +1,2 @@
 usr/include/GLES
-usr/lib/pkgconfig/glesv1_cm.pc
+usr/lib/*/pkgconfig/glesv1_cm.pc
