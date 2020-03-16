@@ -1,0 +1,7 @@
+usr/lib/debug/usr/bin
+usr/lib/debug/usr/bin/sgx_init_test
+usr/lib/debug/usr/bin/xeglinfo
+usr/lib/debug/usr/bin/xgles1test1
+usr/lib/debug/usr/bin/xgles2test1
+usr/lib/debug/usr/bin/xmultiegltest
+

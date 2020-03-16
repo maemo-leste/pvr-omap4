@@ -87,6 +87,25 @@ Description: PowerVR SGX540 utils for OMAP4, debugging symbols
  This package contains utilities to help testing the PowerVR SGX540 libraries
  debugging symbols.
 
+Package: pvr-omap4-utils-extra
+Section: graphics
+Architecture: armhf
+Depends: ${shlibs:Depends}, ${misc:Depends}, pvr-omap4-libs (= ${binary:Version})
+Description: PowerVR SGX540 extra utils for OMAP4
+ PowerVR SGX540 Linux extra utilities for OMAP4.
+ .
+ This package contains utilities to help testing the PowerVR SGX540 libraries.
+
+Package: pvr-omap4-utils-extra-dbg
+Section: debug
+Architecture: armhf
+Depends: pvr-omap4-utils-extra (= ${binary:Version}), ${shlibs:Depends}, ${misc:Depends}, pvr-omap4-libs (= ${binary:Version})
+Description: PowerVR SGX540 extra utils for OMAP4, debugging symbols
+ PowerVR SGX540 Linux utilities for OMAP4.
+ .
+ This package contains extra utilities to help testing the PowerVR SGX540 libraries
+ debugging symbols.
+
 Package: libegl1-sgx-omap4
 Section: libs
 Architecture: armhf

@@ -1,0 +1,17 @@
+#!/sbin/openrc-run
+# Copyright 2020 Maemo Leste
+# Distributed under the terms of the GNU General Public License v2
+
+depend() {
+    before logger
+    after eudev
+}
+
+start() {
+    ebegin "Starting pvr-omap4"
+    /usr/bin/pvrsrvinit
+}
+
+stop() {
+    ebegin "Stopping pvr-omap4 (no-op)"
+}

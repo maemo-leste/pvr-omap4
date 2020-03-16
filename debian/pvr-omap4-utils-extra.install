@@ -1,0 +1,5 @@
+usr/bin/sgx_init_test
+usr/bin/xeglinfo
+usr/bin/xgles1test1
+usr/bin/xgles2test1
+usr/bin/xmultiegltest
