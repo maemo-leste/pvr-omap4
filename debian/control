@@ -20,7 +20,7 @@ Vcs-Browser: https://gitorious.org/ubuntu-omap/pvr-omap4
 Package: pvr-omap4
 Architecture: armhf
 Depends: ${misc:Depends},
-    libegl1-sgx-omap4, libgles1-sgx-omap4, libgles2-sgx-omap4, 
+    libegl1-sgx-omap4, libgles1-sgx-omap4, libgles2-sgx-omap4,
     pvr-omap4-libs, pvr-omap4-utils
 Conflicts: xf86-video-v4l2, sgx-lib
 Replaces: xf86-video-v4l2, sgx-lib
