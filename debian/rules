@@ -1,7 +1,10 @@
 #!/usr/bin/make -f
-MESA_VERS := $(shell apt-cache show --no-all-versions libegl1-mesa | \
-               grep '^Version:' | sed 's/.*: //')
-SUBSTVARS := -Vlibegl1-mesa:Version="$(MESA_VERS)" -Vlibgles2-mesa:Version="$(MESA_VERS)"
+MESA_VERS := $(shell apt-cache show --no-all-versions libegl1-mesa | grep '^Version:' | sed 's/.*: //')
+GLVN_VERS := $(shell apt-cache show --no-all-versions libglvnd0    | grep '^Version:' | sed 's/.*: //')
+
+SUBSTVARS := -Vlibegl1-mesa:Version="$(MESA_VERS)"
+SUBSTVARS += -Vlibgles2-mesa:Version="$(MESA_VERS)"
+SUBSTVARS += -Vlibglvnd0:Version="$(GLVN_VERS)"
 
 %:
 	dh $@
