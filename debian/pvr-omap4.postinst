@@ -1,0 +1,9 @@
+#!/bin/sh
+
+#DEBHELPER#
+
+# Move pvrsrvinit to sysinit runlevel
+rc-update del pvr-omap4 default || true
+rc-update add pvr-omap4 sysinit || true
+
+exit 0
