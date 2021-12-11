@@ -19,17 +19,12 @@ Vcs-Browser: https://gitorious.org/ubuntu-omap/pvr-omap4
 
 Package: pvr-omap4
 Architecture: armhf
-Depends: sgx-ddk-um-ti443x,
- sgx-ddk-um-libs,
- sgx-ddk-um-tools,
-Replaces: ${misc:Depends},
- libegl1-sgx-omap4, libgles1-sgx-omap4, libgles2-sgx-omap4,
- pvr-omap4-libs, pvr-omap4-utils,
- xf86-video-v4l2, sgx-lib
-Provides: ${misc:Depends},
- libegl1-sgx-omap4, libgles1-sgx-omap4, libgles2-sgx-omap4,
- pvr-omap4-libs, pvr-omap4-utils,
- sgx-lib
+Depends: ${misc:Depends},
+    libegl1-sgx-omap4, libgles1-sgx-omap4, libgles2-sgx-omap4,
+    pvr-omap4-libs, pvr-omap4-utils
+Conflicts: xf86-video-v4l2, sgx-lib
+Replaces: xf86-video-v4l2, sgx-lib
+Provides: sgx-lib
 Description: Metapackage for TI PVR OMAP4 Graphics drivers
  This package is a meta package that installs PVR OMAP4 User space
 
